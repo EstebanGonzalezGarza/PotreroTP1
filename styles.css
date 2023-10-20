@@ -15,6 +15,32 @@
     max-width: 100%;
     height: auto;
 }
+/* Punto de quiebre para pantallas pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 576px) {
+    /* Modifica el estilo de los elementos para pantallas pequeñas */
+}
+
+/* Punto de quiebre para pantallas medianas (por ejemplo, tabletas) */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Modifica el estilo de los elementos para tabletas */
+}
+
+/* Punto de quiebre para pantallas grandes (por ejemplo, computadoras de escritorio) */
+@media (min-width: 993px) {
+    /* Modifica el estilo de los elementos para computadoras de escritorio */
+}
+/* Dentro de tu Media Query para pantallas pequeñas */
+@media (max-width: 576px) {
+    .mobile-only {
+        display: block;
+    }
+}
+/* Dentro de tu Media Query para pantallas grandes */
+@media (min-width: 993px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
 header {
     display: flex;
     flex-direction: column;
@@ -22,8 +48,7 @@ header {
     background-color: #b3ab15;
     padding: 40px;
 }
-/* Aplicar la fuente Roboto a elementos específicos */
-/* Establecer una imagen de fondo */
+
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url('img/empa.avif');
